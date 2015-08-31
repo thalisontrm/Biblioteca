@@ -1,0 +1,14 @@
+package com.thalisontrm;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Livro {
+	
+	private long id;
+	private String titulo;
+	private date ano_publicacao;
+	private Genero genero;
+	private List<Autor> autores = new ArrayList<>();
+	private List<Edicao> edicoes = new ArrayList<>();
+	private Editora editora;
+}

@@ -1,0 +1,7 @@
+package com.thalisontrm;
+
+public class Edicao {
+	
+	private Long id;
+	private String descricao;
+}

@@ -1,0 +1,37 @@
+package com.thalisontrm;
+
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Biblioteca {
+	public static void main(String[] Args) {
+
+		Usuario danielle = new Usuario();
+		Livro banco_de_dados = new Livro();
+		Autor carlos_alberto = new Autor();
+		Editora sagra = new Editora();
+		Edicao quarta = new Edicao();
+		Genero educativo = new Genero();
+		Emprestimo emprestimo = new Emprestimo();
+
+		danielle.setNome("Danielle");
+		banco_de_dados.setTitulo("Banco de Dados");
+		carlos_alberto.setNome("Carlos Alberto");
+		sagra.setNome("Sagra");
+		quarta.setDescricao("Quarta");
+		educativo.setDescricao("Educativo");
+		
+		banco_de_dados.getAutores().add(carlos_alberto);
+		banco_de_dados.setEditora(sagra);
+		banco_de_dados.getEdicoes().add(quarta);
+		banco_de_dados.setGenero(educativo);
+		danielle.getLivros().add(banco_de_dados);
+		emprestimo.setLivros(banco_de_dados);
+		emprestimo.setUsuarios(danielle);
+		
+		System.out.println("Usuario = " + danielle.getNome());
+		System.out.println(danielle.getLivros());
+
+	}
+}

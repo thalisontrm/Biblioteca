@@ -1,0 +1,7 @@
+package com.thalisontrm;
+
+public class Genero {
+	
+	private long id;
+	private String descricao;
+}

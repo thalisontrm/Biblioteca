@@ -1,0 +1,9 @@
+package com.thalisontrm;
+
+public class Funcionario extends Pessoa {
+	
+	private String cargo;
+	private double salario;
+	private String email;
+	private String senha;
+}

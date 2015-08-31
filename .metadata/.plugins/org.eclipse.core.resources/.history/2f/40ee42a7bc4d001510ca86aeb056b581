@@ -1,0 +1,10 @@
+package com.thalisontrm;
+
+public class Pessoa {
+
+		private Long id;
+		private String nome;
+		private String endereco;
+		private double telefone;
+		private double cpf;
+}

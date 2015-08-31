@@ -1,0 +1,8 @@
+package com.thalisontrm;
+import java.util.Date;
+public class Emprestimo {
+private Livro livros;
+private Usuario usuarios;
+private Date data_emprestimo;
+
+}

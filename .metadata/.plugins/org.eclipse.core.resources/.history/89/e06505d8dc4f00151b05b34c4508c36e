@@ -1,0 +1,26 @@
+package com.thalisontrm;
+
+public class Usuario extends Pessoa {
+	
+	private String email;
+	private String senha;
+	private Livro livros;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	public void setLivros(Livro livro){
+		this.livros = livro;
+	}
+	
+}
